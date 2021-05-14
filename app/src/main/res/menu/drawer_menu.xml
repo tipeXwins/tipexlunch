@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/memoryFragment"
+        android:title="Memory">
+    </item>
+    <item
+        android:id="@+id/rankingFragment"
+        android:title="Ranking">
+    </item>
+    <item
+        android:id="@+id/calculatorFragment"
+        android:title="Calculadora">
+    </item>
+
+</menu>
