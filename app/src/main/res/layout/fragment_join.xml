@@ -13,25 +13,26 @@
         <LinearLayout
             android:id="@+id/linearLayout"
 
-            android:layout_width="365dp"
-            android:layout_height="395dp"
+            android:layout_width="348dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginEnd="24dp"
-            android:background="@drawable/semiroundedsquare"
+            android:background="@drawable/roundedsquare"
             android:orientation="vertical"
             android:padding="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHeight_min="200dp"
-            app:layout_constraintHorizontal_bias="0.492"
-            app:layout_constraintStart_toStartOf="parent">
+            app:layout_constraintHorizontal_bias="0.466"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.375">
 
             <TextView
                 android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_margin="@dimen/def"
-                android:layout_weight="1"
                 android:text="@string/Meeting_Code"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"
@@ -57,15 +58,13 @@
                     android:inputType="textPersonName" />
 
                 <Space
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent" />
 
                 <Button
                     android:id="@+id/button2"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
                     android:background="@drawable/roundedsquare_child"
                     android:text="@string/join" />
 
@@ -77,7 +76,6 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="@dimen/def"
-                android:layout_weight="2"
 
                 android:text="@string/OR"
                 android:textColor="@color/white"
@@ -86,16 +84,14 @@
             <Button
                 android:id="@+id/button3"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_margin="@dimen/def"
-                android:layout_weight="1"
                 android:background="@drawable/roundedsquare_child"
                 android:text="@string/Create_Meeting" />
 
             <Space
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
+                android:layout_height="match_parent" />
 
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
