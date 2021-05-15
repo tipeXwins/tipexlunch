@@ -15,7 +15,13 @@
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:foregroundTint="#FFFFFF"
+            android:shadowColor="#9C2121"
             android:text="Meeting Explorer"
+            android:textCursorDrawable="@android:drawable/btn_star_big_on"
+            android:textIsSelectable="true"
+            android:textSize="24sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -37,13 +43,22 @@
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:layout_marginBottom="20"
+                android:allowUndo="true"
+                android:paddingBottom="20"
+                android:scrollbarStyle="insideOverlay"
+                android:text="Meeting name"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
 
             <Button
                 android:id="@+id/button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:allowUndo="true"
+                android:text="Button"
+                android:textColorLink="#8A5ED8"
+                android:textCursorDrawable="@drawable/semiroundedsquare" />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>
