@@ -6,7 +6,7 @@
     <style name="deffont">deffont
         <item name="android:textSize">22dp</item>
         <item name="android:textColor">#FFFFFF</item>
-        <string name="android:fontStyle">FontStyle.Bold</string>
+
 
     </style>
 </resources>
