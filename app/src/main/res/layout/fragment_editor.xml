@@ -17,7 +17,8 @@
             android:layout_height="wrap_content"
             android:foregroundTint="#FFFFFF"
             android:shadowColor="#9C2121"
-            android:text="Meeting Explorer"
+            android:text="Meeting Editor"
+            android:textColor="#ffffff"
             android:textCursorDrawable="@android:drawable/btn_star_big_on"
             android:textIsSelectable="true"
             android:textSize="24sp"
@@ -43,22 +44,67 @@
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="10dp"
                 android:allowUndo="true"
+                android:backgroundTint="@color/white"
                 android:paddingBottom="20dp"
                 android:scrollbarStyle="insideOverlay"
                 android:text="Meeting name"
                 android:textColor="@color/black"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundedsquare"
+                android:backgroundTint="@color/white"
+                android:ems="10"
+                android:hint="Name meeting"
+                android:inputType="text" />
 
             <Button
                 android:id="@+id/button"
-                android:layout_width="match_parent"
+                android:layout_width="112dp"
                 android:layout_height="wrap_content"
                 android:allowUndo="true"
                 android:text="Button"
                 android:textColorLink="#8A5ED8"
-                android:textCursorDrawable="@drawable/semiroundedsquare" />
+                android:textCursorDrawable="@drawable/semiroundedsquare"
+                tools:text="Fecha" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="259dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="114dp"
+                android:layout_height="wrap_content"
+                android:allowUndo="true"
+                android:text="Button"
+                android:textColorLink="#8A5ED8"
+                android:textCursorDrawable="@drawable/semiroundedsquare"
+                tools:text="Hora" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName4"
+                android:layout_width="259dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name" />
+
+            <CalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="309dp"
+                android:layout_height="270dp" />
+
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>
