@@ -23,12 +23,14 @@
             android:textIsSelectable="true"
             android:textSize="24sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
+            android:id="@+id/linearLayout2"
             android:layout_width="412dp"
             android:layout_height="641dp"
             android:background="@drawable/roundedsquare"
@@ -86,7 +88,6 @@
                     android:id="@+id/eFecha"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:ems="10"
                     android:inputType="textPersonName"
                     android:text="Name" />
             </LinearLayout>
@@ -108,9 +109,8 @@
 
                 <EditText
                     android:id="@+id/eHora"
-                    android:layout_width="253dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:ems="10"
                     android:inputType="textPersonName"
                     android:text="Name" />
             </LinearLayout>
