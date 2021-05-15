@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="border_radius_big">20sp</dimen>
+    <dimen name="border_radius_small">10sp</dimen>
+
+
+</resources>
