@@ -17,6 +17,7 @@
             android:layout_height="wrap_content"
             android:text="Meeting Explorer"
             android:textAppearance="@style/deffont"
+            android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
