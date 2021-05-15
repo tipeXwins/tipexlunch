@@ -6,32 +6,16 @@
             app:startDestination="@id/editorFragment">
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.example.intouch.FirstFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
-
-        <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
-    </fragment>
-    <fragment
-            android:id="@+id/SecondFragment"
-            android:name="com.example.intouch.SecondFragment"
-            android:label="@string/second_fragment_label"
-            tools:layout="@layout/fragment_second">
-
-        <action
-                android:id="@+id/action_SecondFragment_to_FirstFragment"
-                app:destination="@id/FirstFragment"/>
-    </fragment>
-    <fragment
         android:id="@+id/editorFragment"
         android:name="com.example.intouch.ExplorerFragment"
         android:label="EditorFragment"
         app:startDestination="@id/ruta">
         <action
             android:id="@+id/ruta"
-            app:destination="@id/FirstFragment" />
+            app:destination="@id/fragmentEditor" />
     </fragment>
+    <fragment
+        android:id="@+id/fragmentEditor"
+        android:name="com.example.intouch.FragmentEditor"
+        android:label="FragmentEditor" />
 </navigation>

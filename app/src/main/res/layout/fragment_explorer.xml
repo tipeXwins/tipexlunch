@@ -36,7 +36,7 @@
             app:layout_constraintStart_toStartOf="parent">
 
             <Button
-                android:id="@+id/buttontron"
+                android:id="@+id/b1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Button" />
