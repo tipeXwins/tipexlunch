@@ -11,8 +11,8 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import io.realm.Realm
-import kotlinx.android.synthetic.main.fragment_register.view.*
-import kotlinx.android.synthetic.main.fragment_register.view.buttonRegister
+//import kotlinx.android.synthetic.main.fragment_register.view.*
+//import kotlinx.android.synthetic.main.fragment_register.view.buttonRegister
 
 /**
  * A simple [Fragment] subclass.
@@ -21,7 +21,7 @@ class FragmentRegister: Fragment() {
     var realm = Realm.getDefaultInstance()
 
 
-    override fun onCreateView(
+    /*override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
@@ -75,7 +75,7 @@ class FragmentRegister: Fragment() {
 
         }
     }
-
+*/
 
 
 
