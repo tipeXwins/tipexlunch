@@ -13,22 +13,23 @@
         <LinearLayout
             android:id="@+id/linearLayout"
 
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="365dp"
+            android:layout_height="395dp"
             android:layout_marginStart="24dp"
             android:layout_marginEnd="24dp"
-            android:background="@drawable/roundedsquare"
+            android:background="@drawable/semiroundedsquare"
             android:orientation="vertical"
             android:padding="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_min="200dp"
             app:layout_constraintHorizontal_bias="0.492"
             app:layout_constraintStart_toStartOf="parent">
 
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_margin="@dimen/def"
                 android:layout_weight="1"
                 android:text="@string/Meeting_Code"
@@ -38,7 +39,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_margin="@dimen/def"
                 android:orientation="horizontal">
 
@@ -48,10 +49,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:importantForAutofill="no"
                     android:background="@drawable/roundedsquare_child"
                     android:ems="10"
                     android:hint="@string/ej_name_1234"
+                    android:importantForAutofill="no"
 
                     android:inputType="textPersonName" />
 
@@ -85,11 +86,11 @@
             <Button
                 android:id="@+id/button3"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_margin="@dimen/def"
                 android:layout_weight="1"
                 android:background="@drawable/roundedsquare_child"
-                android:text="@style/Letratron" />
+                android:text="@string/Create_Meeting" />
 
             <Space
                 android:layout_width="wrap_content"
