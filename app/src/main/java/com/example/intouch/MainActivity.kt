@@ -1,4 +1,4 @@
-package com.example.intouch2
+package com.example.intouch
 
 import android.os.Bundle
 import com.google.android.material.floatingactionbutton.FloatingActionButton

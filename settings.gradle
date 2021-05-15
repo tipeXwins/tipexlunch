@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name = "InTouch2"
+rootProject.name = "InTouch"

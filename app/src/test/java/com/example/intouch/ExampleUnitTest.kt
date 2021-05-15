@@ -1,4 +1,4 @@
-package com.example.intouch2
+package com.example.intouch
 
 import org.junit.Test
 
