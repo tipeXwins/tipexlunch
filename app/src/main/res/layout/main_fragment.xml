@@ -31,7 +31,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/def"
                 android:layout_weight="1"
-                android:text="Meeting Code"
+                android:text="@string/Meeting_Code"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -48,12 +48,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:importantForAutofill="no"
                     android:background="@drawable/roundedsquare_child"
                     android:ems="10"
-                    android:hint="ej:name#1234"
-                    android:inputType="textPersonName"
+                    android:hint="@string/ej_name_1234"
 
-                    />
+                    android:inputType="textPersonName" />
 
                 <Space
                     android:layout_width="wrap_content"
@@ -77,8 +77,8 @@
                 android:layout_gravity="center"
                 android:layout_margin="@dimen/def"
                 android:layout_weight="2"
-                android:justificationMode="inter_word"
-                android:text="--OR--"
+
+                android:text="@string/OR"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
 
@@ -89,7 +89,7 @@
                 android:layout_margin="@dimen/def"
                 android:layout_weight="1"
                 android:background="@drawable/roundedsquare_child"
-                android:text="Button" />
+                android:text="@style/Letratron" />
 
             <Space
                 android:layout_width="wrap_content"
