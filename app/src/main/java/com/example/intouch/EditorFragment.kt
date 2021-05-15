@@ -20,9 +20,9 @@ class EditorFragment(): Fragment(){
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        view.findViewById<Button>(R.id.buttontron).setOnClickListener {
-            findNavController().navigate(R.id.ruta)
-        }
+       // view.findViewById<Button>(R.id.buttontron).setOnClickListener {
+         //   findNavController().navigate(R.id.ruta)
+       // }
     }
 
  }

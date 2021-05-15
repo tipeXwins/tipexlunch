@@ -29,16 +29,15 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
-            android:id="@+id/linearLayout3"
             android:layout_width="412dp"
             android:layout_height="641dp"
             android:background="@drawable/roundedsquare"
             android:backgroundTint="#F1E6E6"
             android:orientation="vertical"
+            android:padding="@dimen/def_contentainer"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            >
+            app:layout_constraintStart_toStartOf="parent">
 
             <TextView
                 android:id="@+id/textView"
@@ -64,41 +63,57 @@
                 android:hint="Name meeting"
                 android:inputType="text" />
 
-            <Button
-                android:id="@+id/button"
-                android:layout_width="112dp"
-                android:layout_height="wrap_content"
-                android:allowUndo="true"
-                android:text="Button"
-                android:textColorLink="#8A5ED8"
-                android:textCursorDrawable="@drawable/semiroundedsquare"
-                tools:text="Fecha" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="22dp" />
 
-            <EditText
-                android:id="@+id/editTextTextPersonName"
-                android:layout_width="259dp"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
+                android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/button4"
-                android:layout_width="114dp"
-                android:layout_height="wrap_content"
-                android:allowUndo="true"
-                android:text="Button"
-                android:textColorLink="#8A5ED8"
-                android:textCursorDrawable="@drawable/semiroundedsquare"
-                tools:text="Hora" />
+                <Button
+                    android:id="@+id/bFecha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:allowUndo="true"
+                    android:text="Button"
+                    android:textColorLink="#8A5ED8"
+                    android:textCursorDrawable="@drawable/semiroundedsquare"
+                    tools:text="Fecha" />
 
-            <EditText
-                android:id="@+id/editTextTextPersonName4"
-                android:layout_width="259dp"
+                <EditText
+                    android:id="@+id/eFecha"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bHora"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:allowUndo="true"
+                    android:text="Button"
+                    android:textColorLink="#8A5ED8"
+                    android:textCursorDrawable="@drawable/semiroundedsquare"
+                    tools:text="Hora" />
+
+                <EditText
+                    android:id="@+id/eHora"
+                    android:layout_width="253dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Name" />
+            </LinearLayout>
 
             <CalendarView
                 android:id="@+id/calendarView"
