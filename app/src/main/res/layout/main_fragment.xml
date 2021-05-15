@@ -58,7 +58,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/roundedsquarehijo"
+                    android:background="@drawable/roundedsquare_child"
                     android:ems="10"
                     android:hint="ej:name#1234"
                     android:inputType="textPersonName"
@@ -70,7 +70,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/roundedsquarehijo"
+                    android:background="@drawable/roundedsquare_child"
                     android:text="@string/join" />
 
             </LinearLayout>
