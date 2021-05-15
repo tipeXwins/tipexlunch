@@ -13,7 +13,7 @@
         <LinearLayout
             android:id="@+id/linearLayout"
 
-            android:layout_width="348dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginEnd="24dp"
@@ -23,10 +23,10 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHeight_min="200dp"
-            app:layout_constraintHorizontal_bias="0.466"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.375">
+            app:layout_constraintVertical_bias="0.499">
 
             <TextView
                 android:id="@+id/textView3"
@@ -41,8 +41,10 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/def"
-                android:orientation="horizontal">
+                android:layout_marginLeft="@dimen/def"
+                android:layout_marginRight="@dimen/def"
+                android:orientation="horizontal"
+                android:padding="@dimen/def">
 
                 <EditText
 
@@ -88,10 +90,6 @@
                 android:layout_margin="@dimen/def"
                 android:background="@drawable/roundedsquare_child"
                 android:text="@string/Create_Meeting" />
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent" />
 
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
