@@ -6,14 +6,14 @@
             app:startDestination="@id/FirstFragment">
 
     <fragment
-            android:id="@+id/FirstFragment"
-            android:name="com.example.intouch.FirstFragment"
-            android:label="@string/first_fragment_label"
-            tools:layout="@layout/fragment_first">
+        android:id="@+id/FirstFragment"
+        android:name="com.example.intouch.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
 
         <action
-                android:id="@+id/action_FirstFragment_to_SecondFragment"
-                app:destination="@id/SecondFragment"/>
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
     </fragment>
     <fragment
             android:id="@+id/SecondFragment"
@@ -24,5 +24,14 @@
         <action
                 android:id="@+id/action_SecondFragment_to_FirstFragment"
                 app:destination="@id/FirstFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/editorFragment"
+        android:name="com.example.intouch.EditorFragment"
+        android:label="EditorFragment"
+        app:startDestination="@id/ruta">
+        <action
+            android:id="@+id/ruta"
+            app:destination="@id/FirstFragment" />
     </fragment>
 </navigation>
