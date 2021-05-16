@@ -11,6 +11,8 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import io.realm.Realm
+import kotlinx.android.synthetic.main.fragment_register.view.*
+
 //import kotlinx.android.synthetic.main.fragment_register.view.*
 //import kotlinx.android.synthetic.main.fragment_register.view.buttonRegister
 
@@ -18,7 +20,7 @@ import io.realm.Realm
  * A simple [Fragment] subclass.
  */
 class FragmentRegister: Fragment() {
-    var realm = Realm.getDefaultInstance()/*
+    var realm = Realm.getDefaultInstance()
 
 
     override fun onCreateView(
@@ -41,23 +43,24 @@ class FragmentRegister: Fragment() {
     }
     fun clicarlogin(view: View) {
         view.buttonSI.setOnClickListener {
-            findNavController().navigate(R.id.action_registerFragment2_to_loginFragment2)
+            findNavController().navigate(R.id.Register_to_Login)
         }
     }
-    fun createUsuari(username:String,password:String) {
+    fun createUsuari(username:String,mail:String,password:String) {
         var usuari = Usuari()
         usuari.username = username
+        usuari.email = mail
         usuari.password = password
         var usuaris =MirarUsuari(usuari.username)
         if (usuaris == null) {
             realm.beginTransaction()
             realm.copyToRealm(usuari)
             realm.commitTransaction()
-            val intent = Intent(activity!!, MainActivity::class.java)
+            val intent = Intent(requireActivity(), MainActivity::class.java)
             startActivity(intent)
         }
-        else {
-            Toast.makeText(activity!!, "Usuario ya registrado", Toast.LENGTH_LONG).show()
+        else { // activity!! = requireActivity()
+            Toast.makeText(requireActivity(), "Usuario ya registrado", Toast.LENGTH_LONG).show()
         }
     }
 
@@ -65,16 +68,17 @@ class FragmentRegister: Fragment() {
 
     fun clicarRegister(view: View) {
         view.buttonLog.setOnClickListener {
-            var usernames = view.findViewById<EditText>(R.id.editText2)
-            var contras = view.findViewById<EditText>(R.id.editText)
-            createUsuari(usernames.text.toString(),contras.text.toString())
+            var usernames = view.findViewById<EditText>(R.id.EditTextName)
+            var email = view.findViewById<EditText>(R.id.EditTextMail)
+            var contras = view.findViewById<EditText>(R.id.EditTextPassword)
+            createUsuari(usernames.text.toString(),email.text.toString(),contras.text.toString())
 
 
 
 
 
         }
-    }*/
+    }
 
 
 

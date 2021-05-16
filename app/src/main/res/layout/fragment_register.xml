@@ -50,13 +50,12 @@
                 android:textAppearance="@style/deffont" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName2"
+                android:id="@+id/EditTextName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/roundedsquare_child"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
+                android:inputType="textPersonName" />
 
             <Space
                 android:layout_width="match_parent"
@@ -74,7 +73,7 @@
 
             <EditText
 
-                android:id="@+id/editTextTextPersonName3"
+                android:id="@+id/EditTextMail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/def"
@@ -94,14 +93,13 @@
                 android:textAppearance="@style/deffont" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/EditTextPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/def"
                 android:background="@drawable/roundedsquare_child"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
+                android:inputType="textPersonName" />
 
             <Button
                 android:id="@+id/buttonLog"
