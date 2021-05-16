@@ -34,7 +34,7 @@
             android:layout_width="412dp"
             android:layout_height="641dp"
             android:background="@drawable/roundedsquare"
-            android:backgroundTint="#F1E6E6"
+            android:backgroundTint="@color/white"
             android:orientation="vertical"
             android:padding="@dimen/def_contentainer"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -88,8 +88,8 @@
                     android:id="@+id/eFecha"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:inputType="textPersonName"
-                    android:text="Name" />
+                    android:hint="Fecha de meeting"
+                    android:inputType="textPersonName" />
             </LinearLayout>
 
             <LinearLayout
@@ -111,14 +111,14 @@
                     android:id="@+id/eHora"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textPersonName"
-                    android:text="Name" />
+                    android:hint="Hora del evento"
+                    android:inputType="textPersonName" />
             </LinearLayout>
 
             <CalendarView
                 android:id="@+id/calendarView"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="328dp" />
 
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
