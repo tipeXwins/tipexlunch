@@ -41,6 +41,12 @@ class FragmentRegister: Fragment() {
 
 
     }
+    fun MirarMail(mails: String):Usuari? {
+        val usuari = realm.where(Usuari::class.java)
+            .equalTo("email",mails)
+            .findFirst()
+        return usuari
+    }
     fun clicarlogin(view: View) {
         view.buttonSI.setOnClickListener {
             findNavController().navigate(R.id.Register_to_Login)
@@ -51,7 +57,7 @@ class FragmentRegister: Fragment() {
         usuari.username = username
         usuari.email = mail
         usuari.password = password
-        var usuaris =MirarUsuari(usuari.username)
+        var usuaris =MirarMail(usuari.email)
         if (usuaris == null) {
             realm.beginTransaction()
             realm.copyToRealm(usuari)

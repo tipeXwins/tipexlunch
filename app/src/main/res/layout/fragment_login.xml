@@ -53,7 +53,7 @@
 
             <EditText
 
-                android:id="@+id/editTextTextPersonName3"
+                android:id="@+id/EditTextMail1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/def"
@@ -69,18 +69,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/def"
-                android:text="TextView"
+                android:text="Password"
                 android:textAppearance="@style/deffont" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/EditTextPassword1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/def"
                 android:background="@drawable/roundedsquare_child"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
+                android:inputType="textPersonName" />
 
             <Button
                 android:id="@+id/buttonLog"
@@ -88,7 +87,15 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/def"
                 android:background="@drawable/roundedsquare_child"
-                android:text="@string/join" />
+                android:text="@string/signIn" />
+
+            <Button
+                android:id="@+id/buttonSO"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="@string/signUp" />
 
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,7 +9,7 @@
         android:name="com.example.intouch.FragmentLogin"
         android:label="FragmentLogin" >
         <action
-            android:id="@+id/action_fragmentLogin_to_fragmentRegister"
+            android:id="@+id/Login_to_Register"
             app:destination="@id/fragmentRegister" />
     </fragment>
     <fragment

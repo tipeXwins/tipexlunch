@@ -20,7 +20,7 @@ import kotlinx.android.synthetic.main.fragment_login.view.*
  */
 class FragmentLogin : Fragment() {
     var realm = Realm.getDefaultInstance()
-    /*
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -29,9 +29,9 @@ class FragmentLogin : Fragment() {
         // Inflate the layout for this fragment
 
         var view= inflater.inflate(R.layout.fragment_login, container, false)
-        var text = view.findViewById<EditText>(R.id.editText2)
-        view.buttonregister.setOnClickListener {
-            findNavController().navigate(R.id.action_loginFragment2_to_registerFragment2)
+
+        view.buttonSO.setOnClickListener {
+            findNavController().navigate(R.id.Login_to_Register)
         }
         clicarLogin(view)
         clicarregister(view)
@@ -42,30 +42,30 @@ class FragmentLogin : Fragment() {
     }
 
     fun clicarregister(view:View) {
-        view.buttonregister.setOnClickListener {
-            findNavController().navigate(R.id.action_loginFragment2_to_registerFragment2)
+        view.buttonSO.setOnClickListener {
+            findNavController().navigate(R.id.Login_to_Register)
         }
 
     }
 
     fun clicarLogin(view: View) {
 
-        view.buttonLogin.setOnClickListener {
-            val usernames = view.findViewById<EditText>(R.id.editText2).text.toString()
-            val contras = view.findViewById<EditText>(R.id.editText)
+        view.buttonLog.setOnClickListener {
+            val mail = view.findViewById<EditText>(R.id.EditTextMail).text.toString()
+            val contras = view.findViewById<EditText>(R.id.EditTextPassword)
             val usuari = realm.where(Usuari::class.java)
-                .equalTo( "username", usernames)
+                .equalTo( "email", mail)
                 .findFirst()
             if (usuari == null) {
-                Toast.makeText(activity!!, "Inserte usuario", Toast.LENGTH_LONG).show()
+                Toast.makeText(requireActivity(), "Inserte usuario", Toast.LENGTH_LONG).show()
             }
             else {
-                if ((usuari.username == usernames) and (usuari.password == contras.text.toString())) {
-                    val intent = Intent(activity!!, MainActivity::class.java)
+                if ((usuari.email == mail) and (usuari.password == contras.text.toString())) {
+                    val intent = Intent(requireActivity(), MainActivity::class.java)
                     startActivity(intent)
-                    UsernameSingleton.instance.username = usuari.username
+
                 } else {
-                    Toast.makeText(activity!!, "Usuari o Contraseña Incorrectos", Toast.LENGTH_LONG)
+                    Toast.makeText(requireActivity(), "Usuari o Contraseña Incorrectos", Toast.LENGTH_LONG)
                         .show()
 
                 }
@@ -74,6 +74,6 @@ class FragmentLogin : Fragment() {
 
 
     }
-*/
+
 
 }
