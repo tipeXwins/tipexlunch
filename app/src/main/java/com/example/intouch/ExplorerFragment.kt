@@ -20,7 +20,7 @@ class ExplorerFragment(): Fragment(){
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-       view.findViewById<Button>(R.id.b1).setOnClickListener {
+       view.findViewById<Button>(R.id.button0).setOnClickListener {
             findNavController().navigate(R.id.ruta)
         }
     }

@@ -18,10 +18,10 @@ import io.realm.Realm
  * A simple [Fragment] subclass.
  */
 class FragmentRegister: Fragment() {
-    var realm = Realm.getDefaultInstance()
+    var realm = Realm.getDefaultInstance()/*
 
 
-    /*override fun onCreateView(
+    override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
@@ -74,8 +74,8 @@ class FragmentRegister: Fragment() {
 
 
         }
-    }
-*/
+    }*/
+
 
 
 

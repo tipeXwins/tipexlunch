@@ -3,6 +3,7 @@
 
     <dimen name="def">5dp</dimen>
     <dimen name="def_contentainer">30dp</dimen>
+    <dimen name="def_cajita">8dp</dimen>
 
 
 
