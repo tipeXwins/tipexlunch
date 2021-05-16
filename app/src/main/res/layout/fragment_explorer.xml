@@ -335,7 +335,7 @@
                     </LinearLayout>
 
                     <Button
-                        android:id="@+id/button3"
+                        android:id="@+id/buttonLog"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"

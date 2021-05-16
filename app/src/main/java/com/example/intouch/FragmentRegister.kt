@@ -40,7 +40,7 @@ class FragmentRegister: Fragment() {
 
     }
     fun clicarlogin(view: View) {
-        view.buttonlogan.setOnClickListener {
+        view.buttonSI.setOnClickListener {
             findNavController().navigate(R.id.action_registerFragment2_to_loginFragment2)
         }
     }
@@ -64,7 +64,7 @@ class FragmentRegister: Fragment() {
 
 
     fun clicarRegister(view: View) {
-        view.buttonRegister.setOnClickListener {
+        view.buttonLog.setOnClickListener {
             var usernames = view.findViewById<EditText>(R.id.editText2)
             var contras = view.findViewById<EditText>(R.id.editText)
             createUsuari(usernames.text.toString(),contras.text.toString())

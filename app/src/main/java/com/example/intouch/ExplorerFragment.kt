@@ -23,6 +23,15 @@ class ExplorerFragment(): Fragment(){
        view.findViewById<Button>(R.id.button0).setOnClickListener {
             findNavController().navigate(R.id.ruta)
         }
+        view.findViewById<Button>(R.id.button1).setOnClickListener {
+            findNavController().navigate(R.id.ruta)
+        }
+        view.findViewById<Button>(R.id.button2).setOnClickListener {
+            findNavController().navigate(R.id.ruta)
+        }
+        view.findViewById<Button>(R.id.buttonLog).setOnClickListener {
+            findNavController().navigate(R.id.ruta)
+        }
     }
 
  }
